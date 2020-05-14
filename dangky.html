@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- bootstrap 3.3.7 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>đăng ký</title>
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" url="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"> -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/style-login.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+
+	<!-- reset css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+	<!-- JS BOOTSTRAP -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<!-- HEADER -->
+			<header id="header" class="">
+				<div class="container-fluid">
+
+				<div class="header-top py-2">
+					<span>
+						<ul class="d-flex list-unstyled align-items-center">
+							<li class="pl-2 pr-3">Miễn phí vận chuyển với đơn hàng trên 1 triệu đồng</li>
+							<div class="devider"></div>
+							<li class="pl-3">
+								Hotline:
+								<a href="tel:0338145225" class="font-weight-bold">
+									033 814 5225
+								</a>
+							</li>
+						</ul>
+					</span>
+				</div>
+
+				<div class="container">
+					<div class="header-main row">
+						<div class="header-logo col-md-3">
+							<a class="logo-img" href="index.html" title="monkey authentic">
+								<img src="image/logo_monkeyauthentic.jpg" class="mx-auto d-block" alt="logo" width="200" height="100">
+							</a>
+						</div>
+
+						<div class="header-search col-md-6">
+							<form>
+								<div class="d-flex align-items-center form-search">
+									<input class="form-control" type="text" placeholder="Tìm kiếm . . ."
+									aria-label="Search">
+									<i class="fas fa-search" type="submit"></i>
+								</div>
+							</form>
+						</div>
+
+						<div class="header-login col-md-3">
+							<div class="d-flex">
+								<div class="icon-header mx-auto"  data-toggle="modal" data-target="#exampleModal">
+									<a href="#">
+										<i class="fas fa-user fa-lg"></i>
+									</a>
+								</div>
+
+								<div class="icon-header mx-auto">
+									<a href="#">
+										<i class="fas fa-shopping-cart fa-lg"></i>
+									</a>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+								    	<div class="modal-content">
+								      		<div class="modal-header text-center">
+								        		<p class="modal-title font-weight-bold  " id="exampleModalLabel">Đăng Nhập</p>
+								        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          			<span aria-hidden="true">&times;</span>
+								        		</button>
+								      		</div>
+
+								      	<div class="modal-body">
+								       		<div class="login">
+			
+												<form class="p-3 mx-auto" action="login_submit" method="get" accept-charse="utf-8">
+
+													<div class="form-group">
+														<input class="form-control form-control-lg" id="name" type="text" name="name" placeholder="Email hoặc số điện thoại"> 
+													</div>
+
+													<div class="form-group">
+														<input class="form-control form-control-lg" id="password" type="password" name="pwd" placeholder="Mật khẩu">
+													</div>
+
+													<div class="form-check pl-0">
+														<input id="savepass" type="checkbox" name="savepass">
+														<label for="savepass">Lưu ID</label>
+													</div>
+
+													<div class="form-button d-flex justify-content-center">
+														<button type="button" class="btn btn-info font-weight-bold text-center">Đăng Nhập</button>
+													</div>
+												</form>
+											</div>
+								      	</div>
+
+									     	<div class="modal-footer">		
+									     		<button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal">Xóa</button>
+								        		<a href="dangky.html">
+								        			<button type="button" class="btn btn-info font-weight-bold ">Đăng ký</button>
+								        		</a>
+									      	</div>
+								    	</div>
+								  </div>
+							</div>
+							<!-- END MODAL -->
+						</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								 <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								        ...
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								        <button type="button" class="btn btn-primary">Save changes</button>
+								      </div>
+								    </div>
+								  </div>
+							</div>
+							<!-- END MODAL -->
+						</div>
+					</div>
+				</div>
+
+				</div>
+			</header>
+			<!-- END header -->
+
+			<!-- MENU NAV -->
+			<div class="menu-nav">
+				<div class="container-fluid">
+				<div class="nav-main py-3 row">
+
+					<div class="d-flex align-items-center col-md-5">
+						<img src="image/cam_ket.png" alt="" width="40" height="40">
+						<div class="pl-2">
+							<span class="font-weight-bold">HÀNG CHÍNH HÃNG: </span>
+							<span>Cam kết 100% sản phầm chính hãng</span>
+						</div>
+					</div>
+
+					<nav class="my-auto col-md-7">
+						<ul class="d-flex align-items-center justify-content-end">
+								<li class="nav-item lis-item">
+									<a href="danhsachsp.html" class="nav-link">SNEAKERS
+										<i class="fas fa-angle-down"></i>
+									</a>
+								</li>
+
+								<li class="nav-item lis-item pl-2">
+									<a href="#" class="nav-link">CLOTHING
+										<i class="fas fa-angle-down"></i>
+									</a>
+								</li>
+
+								<li class="nav-item sale-item pl-2">
+									<a href="#" class="nav-link" style="color: red;">SALE</a>
+								</li>
+
+								<li class="nav-item pl-2 ">
+									<a href="#" class="nav-link">ORDER - BÁO GIÁ</a>
+								</li>
+
+								<li class="nav-item pl-2">
+									<a href="#" class="nav-link">NEWS</a>
+								</li>
+						</ul>
+					</nav>
+				</div>
+				</div>
+			</div>
+			<!-- END MENU NAV -->
+<!-- ------------------------------------------- -->
+	
+			<!-- LOGIN -->
+			<div class="login">
+				<div class="registration">
+			
+			<form class="border w-50 p-5 my-5 mx-auto" action="login_submit" method="get" accept-charse="utf-8">
+
+				<h1 class="font-weight-bold text-uppercase text-center pb-5" style="font-size: 40px;">Đăng ký</h1>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg " id="ho" type="text" name="name" placeholder="Họ">
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg " id="ten" type="text" name="name" placeholder="Tên">
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg" id="sdt" type="text" name="sdt" placeholder="Số điện thoại"> 
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg" id="email" type="text" name="email" placeholder="Email"> 
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg" id="password" type="password" name="pwd" placeholder="Mật khẩu">
+				</div>
+
+				<div class="form-button d-flex justify-content-center">
+					<a href="index.html">
+					<button type="button" class="btn btn-info">Đăng ký</button>
+					</a>
+				</div>
+			</form>
+				</div>
+			</div>
+			<!-- END LOGIN -->
+
+<!-- ------------------------------------------- -->
+			<!-- FOOTER -->
+			<footer class="main-footer pb-2">
+					<!-- MAIN MEDIA -->
+					<div class="main-media bg-light py-3">
+						<div class="container">
+							<div class="d-flex justify-content-between">
+							<!-- FACEBOOK -->
+							
+								<a href="#" class="btn btn-primary btn-social btn-fb" role="button">
+									<i class="fab fa-facebook-f"></i>
+									<span>FACEBOOK</span>
+								</a>
+							
+
+							<!-- INSTAGRAM -->
+							
+								<a href="#" class="btn btn-primary btn-social btn-ig" role="button">
+									<i class="fab fa-instagram"></i>
+									<span>INSTAGRAM</span>
+								</a>
+							
+
+							<!-- YOUTUBE -->
+							
+								<a href="#" class="btn btn-primary btn-social btn-yt " role="button">
+									<i class="fab fa-youtube"></i>
+									<span>YOUTUBE</span>
+								</a>
+							
+
+							<!-- TIKTOK -->
+							
+								<a href="#" class="btn btn-primary btn-social btn-tt" role="button">
+									<img src="image/logo-tik-tok.png" alt="" width="20" height="20" style="vertical-align:middle">
+									<span>TIKTOK</span>
+								</a>
+							</div>
+						</div> 
+					</div>
+
+					<!-- END MAIN MEDIA -->
+					<div class="footer row my-5">
+						<div class="col-md-6 d-flex justify-content-around">
+							<div class="footer-left">
+								<ul>
+									<li class="font-weight-bold text-uppercase pb-4" ><p>monkey vietnam - 100% authentic</p></li>
+									<li class="content-footer pb-3">Địa chỉ: Hà Đông - Hà Nội</li>
+									<li class="content-footer pb-3">Hotline: 033 814 5225</li>
+									<li class="content-footer pb-3">Email: MONKEY@gmail.com</li>
+								</ul>
+							</div>
+
+							<div class="footer-center">
+								<div class="cs">
+									<p class="font-weight-bold text-capitalize pb-4 ">Chính sách</p>
+
+									<div class="pb-3"><a class="content-footer" href="#">Chính sách bảo mật</a></div>
+									
+									<div class="pb-3"><a class="content-footer" href="#">Chính sách vận chuyển</a></div>
+									
+									<div class="pb-3"><a class="content-footer" href="#">Chính sách đổi trả</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-right col-md-6">
+							<div class="footer-email text-center">
+								<form class="footer-form" caction="index_submit" method="get" accept-charset="utf-8">
+									<input class="content-footer p-2 rounded" type="email" name="eamil" placeholder="Nhập Email nhận tin khuyến mại . . ." style="width: 50%">
+									<i class="fas fa-paper-plane text-white" type="submit"></i>
+								</form>
+							</div>
+						</div>
+
+					</div>
+			</footer>
+			<!-- END FOOTER -->
+			<div class="bottom bg-dark text-white p-3">
+					<div class="container">
+						<p class="m-auto text-center">Bản quyền thuộc về MONKEY AUTHENTC</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LOGIN -->
+		<div class="login">
+			
+			<form class="border w-50 p-5 my-5 mx-auto" action="login_submit" method="get" accept-charse="utf-8">
+
+				<h1 class="font-weight-bold text-uppercase text-center pb-5" style="font-size: 40px;">Đăng ký</h1>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg " id="ho" type="text" name="name" placeholder="Họ">
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg " id="ten" type="text" name="name" placeholder="Tên">
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg" id="sdt" type="text" name="sdt" placeholder="Số điện thoại"> 
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg" id="email" type="text" name="email" placeholder="Email"> 
+				</div>
+
+				<div class="form-group d-flex justify-content-center">
+					<input class="form-control w-75 form-control-lg" id="password" type="password" name="pwd" placeholder="Mật khẩu">
+				</div>
+
+				<div class="form-button d-flex justify-content-center">
+					<a href="index.html">
+					<button type="button" class="btn btn-info">Đăng ký</button>
+					</a>
+				</div>
+			</form>
+
+		</div>
+	<!-- END LOGIN -->
+</body>
+</html>

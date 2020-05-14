@@ -1,0 +1,26 @@
+
+/*MAIN CENTER*/
+.text-spnoibat{
+  border-bottom: #ebebeb 2px solid;
+  width: 400px;
+}
+
+.sp-noibat .product-collection{
+  width: 200px;
+  height: 250px;
+}
+  .product-collection:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+  }
+
+.sp-noibat .sp-img{
+  width: 200px;
+  height: 200px;
+}
+.sp-noibat .sp-content{
+  height: 60px;
+}
+.menu-nav{
+  border-bottom: : #ebebeb 1px solid;
+}

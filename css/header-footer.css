@@ -1,0 +1,114 @@
+/*--------------------------------------------------------*/
+
+/**{
+ font-family: 'Montserrat', sans-serif;
+}*/
+
+a:hover{
+    text-decoration: none;
+    color: #FF99CC;
+}
+
+.product-collection:hover {
+        transform: scale(1.1);
+        transition: all 0.8s;
+}
+
+.content{
+  width: 1320px;
+  margin:0 auto;
+}
+/*HEADER TOP*/
+.devider{
+  border-right: #ebebeb 1px solid;
+  height: 20px;
+}
+.header-top{
+  border-bottom: #ebebeb 1px solid;
+}
+.header-top li a{
+  transition: transform .3s ease-out;
+  display: inline-block;
+}
+.header-top li a:hover{
+  transform: translate(6px, 0);
+}
+
+/*HEADER MAIN*/
+
+  /*SEARCH*/
+  .header-search input{
+    border:none;
+  }
+  .form-search{
+    padding-top: 30px;
+    border-bottom: black 2px solid;
+    outline: none;
+  }
+
+  /*LOGIN*/
+  .header-login{
+    padding-top: 45px;
+  }
+  .header-login a{
+    color: black;
+  }
+  .icon-header:hover{
+  transform: scale(1.3);
+  transition: all 0.3s;
+  }
+  .login input{
+  border-left: red 5px solid;
+  }
+  .modal-header p{
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+/*------------------------------------*/
+/*MENU NAV*/
+.nav-link{
+  color: black;
+  font-weight: bold;
+}
+.nav-item a:hover{
+  border-radius: 50px;
+  background-color: #FF99CC;
+  color: white;
+}
+.menu-nav {
+    border-bottom: #ebebeb 1px solid;
+}
+
+
+/*--------------------------------------*/
+/*MAIN FOOTER*/
+.main-footer{
+  background-color: #444444 ;
+  margin-bottom: 1px;
+}
+.main-footer p{
+  color: white;
+}
+.content-footer{
+  color: #999;
+}
+.footer-center a{
+  transition: transform .3s ease-out;
+  display: inline-block;
+}
+.footer-center a:hover{
+  transform: translate(10px,0);
+}
+.footer-email i:hover{
+  transform: scale(1.4);
+  transition: all 0.3s;
+  color: #FF99CC;
+}
+
+
+/*-----------------------*/
+/*LOGIN*/
+.registration{
+  border-top: #ebebeb 1px solid;
+}
